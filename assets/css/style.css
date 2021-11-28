@@ -1,0 +1,53 @@
+
+/* We just told every element on the page to not have any margin or border unless we explicitly tell it to. Now we don't have to concern ourselves with undoing built-in browser styles one by one. */
+/*The asterisk * we used here is used quite often in programming. It is typically called a wildcard, but in CSS it is known as a universal selector. This is essentially a catch-all selector that says, 
+"I won't match one thing—I'll match everything!"*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+body {
+    /* By adding this, we're setting the color of the font for the entire page to a light-blue/teal color with what's known as a hexadecimal number. */
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  /* We just told the <header> element to apply padding—a kind of spacing—around its content, which in this case is around all the text items it contains. */
+header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+  }
+
+  /*Here, we're implementing a more specific selector pattern. The first one ensures that we are only applying styles that are specific to a particular <h1> element: 
+  the one that is contained inside a <header> element. */ 
+  header h1 {
+    font-weight: bold;
+  font-size: 36px;
+  color: #fce138;
+  margin: 0;
+  display: inline;
+  }
+  
+  /*The text-decoration property applies underline, strikethrough, or overline styles to text.*/
+  header a {
+    text-decoration: none;
+    color: #fce138;
+  }
+
+  header nav {
+    float: right;
+    margin: 7px 0;
+  }
+
+  header nav ul li {
+    display: inline;
+  }
+
+  header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+  }
