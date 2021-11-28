@@ -1,16 +1,15 @@
 
-/* We just told every element on the page to not have any margin or border unless we explicitly tell it to. Now we don't have to concern ourselves with undoing built-in browser styles one by one. */
-/*The asterisk * we used here is used quite often in programming. It is typically called a wildcard, but in CSS it is known as a universal selector. This is essentially a catch-all selector that says, 
-"I won't match one thing—I'll match everything!"*/
+/* We just told every element on the page to not have any margin or border unless we explicitly tell it to.*/
+/*The asterisk * This is essentially a catch-all selector that says, "I won't match one thing—I'll match everything!"*/
 * {
     margin: 0;
-    padding: 0;
+  padding: 0;
+  box-sizing: border-box;
   }
 
 
-
+/* By adding this, we're setting the color of the font for the entire page to a light-blue/teal color with what's known as a hexadecimal number. */
 body {
-    /* By adding this, we're setting the color of the font for the entire page to a light-blue/teal color with what's known as a hexadecimal number. */
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
   }
@@ -50,4 +49,29 @@ header {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+  }
+
+  footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+  }
+
+  footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+  }
+
+ /*The line-height property assigns how much vertical space should be between lines of text content.*/
+ /*The text-align property lets us align the text to the left, right, center, or justified. By default, it is left-aligned.*/
+  footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+  }
+
+  footer a {
+    color: #024e76;
   }
